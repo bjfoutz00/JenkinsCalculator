@@ -81,7 +81,7 @@ class Calculator {
     String createUniqueID(String n){
         Random r = new Random();
         String answer = n;
-        for (int i = 0; i < r.nextInt(20); i++) {
+        for (int i = 0; i < 100; i++) {
             answer += (char)(r.nextInt('z' - 'a') + 'a');
         }
         return answer;
