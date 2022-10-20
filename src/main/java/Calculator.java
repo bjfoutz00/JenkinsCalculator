@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Class to imitate a calculator
+ */
 class Calculator {
 
     Calculator(){
