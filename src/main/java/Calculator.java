@@ -3,7 +3,6 @@ import java.util.Random;
 
 /**
  * Class to imitate a calculator
- * note: if not working, take out failure block in jenkins
  */
 class Calculator {
 
