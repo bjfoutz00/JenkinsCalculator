@@ -6,10 +6,12 @@ pipeline {
     }
 
     agent any
+
     tools {
         maven 'apache maven 3.6.3'
         jdk 'JDK 8'
     }
+
     stages {
         stage ('Clean') {
             steps {
@@ -75,7 +77,7 @@ pipeline {
 
     post {
         failure {
-            mail to:  'bjfoutz00@gmail.com',
+            mail to: 'bjfoutz00@gmail.com',
             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
             body: "Something is wrong with ${env.BUILD_URL}"
         }
